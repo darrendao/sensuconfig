@@ -1,0 +1,9 @@
+{
+  "mailer": {
+    "mail_from": "sensu@example.com",
+    "mail_to": "darren.dao@jpl.nasa.gov",
+    "smtp_address": "localhost",
+    "smtp_port": "25",
+    "smtp_domain": "localhost.localdomain"
+  }
+}
