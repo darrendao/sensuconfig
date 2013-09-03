@@ -14,6 +14,13 @@ cookbook_file "/etc/sensu/plugins/disk-usage-metrics.rb" do
   mode 0755
 end
 
+cookbook_file "/etc/sensu/plugins/vmstat-metrics.rb" do
+  backup false
+  path "/etc/sensu/plugins/vmstat-metrics.rb"
+  action :create_if_missing
+  mode 0755
+end
+
 # set up vmstat-metrics check
 sensu_check "vmstat_metrics" do
   command "/etc/sensu/plugins/vmstat-metrics.rb --scheme stats.:::name:::"
