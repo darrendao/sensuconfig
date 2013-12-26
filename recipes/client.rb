@@ -7,9 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-cookbook_file "/etc/sensu/plugins/check-socket.rb" do
+cookbook_file "/etc/sensu/plugins/check-kafka-socket.rb" do
   backup false
-  path "/etc/sensu/plugins/check-socket.rb"
+  path "/etc/sensu/plugins/check-kafka-socket.rb"
   action :create_if_missing
   mode 0755
 end
